@@ -11,6 +11,10 @@ out/
 .settings
 .springBeans
 .sts4-cache
+.idea
+.gitignore
+.Java_solved.ac.iml
+
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
