@@ -11,9 +11,9 @@ out/
 .settings
 .springBeans
 .sts4-cache
-/.idea
+.idea/
 .gitignore
-Java_solved.ac.iml
+/Java_solved.ac.iml
 
 bin/
 !**/src/main/**/bin/
