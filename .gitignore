@@ -13,7 +13,7 @@ out/
 .sts4-cache
 .idea/
 .gitignore
-/Java_solved.ac.iml
+Java_solved.ac.iml
 
 bin/
 !**/src/main/**/bin/
