@@ -1,4 +1,4 @@
-package class1;
+package solved.ac.class1;
 
 import java.util.Scanner;
 

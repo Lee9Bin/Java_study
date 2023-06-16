@@ -1,6 +1,5 @@
-package class1;
+package solved.ac.class1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class p1330 {
