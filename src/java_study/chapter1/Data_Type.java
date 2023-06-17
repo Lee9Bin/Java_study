@@ -43,7 +43,7 @@ public class Data_Type {
 //      자바10부터 데이터 타입을 선언하지않고 사용은 가능 단, 지역변수에서
         var i = 10;
         System.out.println(i);
-//        i = "test"; 이건 안돼
+//      i = "test"; 이건 안돼 즉, 다른 타입으로 바꾸면 안돼
         i = 11;
         System.out.println(i);
 
