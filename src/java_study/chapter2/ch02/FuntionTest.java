@@ -1,5 +1,5 @@
 package java_study.chapter2.ch02;
-
+//함수와 메서드
 public class FuntionTest {
 //  반환값이 있으면 해당 자료형을 쓰고 없다면 void, 함수이름, (매개변수가 있다면 쓴다)
     public static int addNum(int num1, int num2) {
