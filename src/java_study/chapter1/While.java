@@ -1,7 +1,7 @@
 package java_study.chapter1;
 
 import java.util.Scanner;
-
+//while문
 public class While {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
