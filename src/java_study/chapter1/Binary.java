@@ -1,5 +1,5 @@
 package java_study.chapter1;
-
+//진수 표현법
 public class Binary {
     public static void main(String[] args){
         int num = 10;
