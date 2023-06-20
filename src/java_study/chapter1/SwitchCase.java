@@ -1,5 +1,5 @@
 package java_study.chapter1;
-
+//switch case문
 public class SwitchCase {
     public static void main(String[] args){
 //  if, else if, else문을 좀더 가독성있게 switch로 구현가능
