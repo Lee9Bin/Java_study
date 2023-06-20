@@ -1,7 +1,7 @@
 package java_study.chapter1;
 
 import java.util.Scanner;
-
+//조건 연산자
 public class Conition {
     public static void main(String[] args){
 //      입력 받기위해서 사용하는 스캐너 객체 System.in은 입력이라고 생각하면 돼 System.out.print()는 출력키워드
