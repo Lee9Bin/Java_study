@@ -1,5 +1,5 @@
 package java_study.chapter2.ch03;
-
+//객체와 메서드
 public class Student {
     public int studentId;
     public String studentName;
