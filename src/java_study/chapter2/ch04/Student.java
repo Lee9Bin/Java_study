@@ -1,5 +1,5 @@
 package java_study.chapter2.ch04;
-
+//생성자
 public class Student {
     public int studentNumber;
     public String studentName;
