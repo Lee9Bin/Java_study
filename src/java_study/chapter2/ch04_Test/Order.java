@@ -26,6 +26,5 @@ public class Order {
         System.out.println("주문 시간 : "+time);
         System.out.println("주문 가격 : "+price);
         System.out.println("메뉴 번호 : "+menuNum);
-
     }
 }
