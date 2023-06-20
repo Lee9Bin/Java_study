@@ -1,5 +1,5 @@
 package java_study.chapter1;
-
+//다양한 자료형
 public class Data_Type {
     public static void main(String[] args){
 //  지료형마다 나타낼수 있는 바이트의 크기가 달라
