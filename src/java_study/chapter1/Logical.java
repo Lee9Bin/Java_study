@@ -1,5 +1,5 @@
 package java_study.chapter1;
-
+//논리 연산자
 public class Logical {
     public static void main(String[] args){
         int a = 1;
