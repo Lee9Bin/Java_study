@@ -1,5 +1,5 @@
 package java_study.chapter1;
-
+//반복문의 중첩
 public class ForAndWhile {
     public static void main(String[] args){
         for (int i = 2; i < 10; i++){
