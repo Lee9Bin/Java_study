@@ -9,10 +9,14 @@ public class TakeTransTest {
         Student personE = new Student("Edward",20000);
 
         Bus bus100 = new Bus(100);
+        Bus bus200 = new Bus(200);
+
         Subway subwayGreen = new Subway(2);
         Taxi goodTaxi = new Taxi("잘 간다 운수택시");
 
         personJ.takeBus(bus100);
+        personJ.takeBus(bus100);
+        personJ.takeBus(bus200);
         personT.takeSubway(subwayGreen);
         personE.takeTaxi(goodTaxi);
 
@@ -21,6 +25,8 @@ public class TakeTransTest {
         personE.showInfo();
 
         bus100.showBusInfo();
+        bus200.showBusInfo();
+
         subwayGreen.showBusInfo();
         goodTaxi.showInfo();
     }

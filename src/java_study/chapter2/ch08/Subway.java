@@ -9,9 +9,10 @@ public class Subway {
         this.subwayNumber = subwayNumber;
 
     }
-    public void take(int money){
+    public void take(int income){
         personCnt += 1;
-        income += money;
+//      this = 매개변수와 멤버변수의 구분을 짖기 위해
+        this.income += income;
     }
 
     public void showBusInfo(){

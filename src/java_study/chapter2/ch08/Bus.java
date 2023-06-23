@@ -11,7 +11,8 @@ public class Bus {
     }
     public void take(int money){
         personCnt += 1;
-        income += money;
+//        income += money;
+        this.income += money;
     }
 
     public void showBusInfo(){
