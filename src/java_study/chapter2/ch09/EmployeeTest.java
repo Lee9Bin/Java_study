@@ -6,7 +6,7 @@ public class EmployeeTest {
         Employee employeeLee = new Employee();
         employeeLee.setEmployeeName("홍길동");
 //      그러고 나서 serialnum을 출력하고 나면 101
-        System.out.println(employeeLee.serialNum);
+        System.out.println(employeeLee.getSerialNum());
 
 //      김흥부에 serialnum을 empliyeeId에 넣고 serialnum은 1증가
         Employee employeeKim = new Employee();
@@ -16,8 +16,8 @@ public class EmployeeTest {
 //      데이터 영역      스택 메모리     힙 메모리(동적메모리)
 //      static변수(serialNum) <-- employeeLee --> employeeLee인스턴스
 //          ^------------------ employeeKim --> employeeKim인스턴스
-        System.out.println(employeeLee.serialNum);//      102
-        System.out.println(employeeKim.serialNum);//      102
+        System.out.println(employeeLee.getSerialNum());//      102
+        System.out.println(employeeKim.getSerialNum());//      102
 //      생성자를 통해 static 변수를 증가시켜 사번을 부여
         System.out.println(employeeLee.getEmployeeId());//   100
         System.out.println(employeeKim.getEmployeeId());//   101
