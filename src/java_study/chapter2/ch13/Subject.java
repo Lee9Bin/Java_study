@@ -3,22 +3,22 @@ package java_study.chapter2.ch13;
 import java.util.ArrayList;
 
 public class Subject {
-    String subjectName;
-    int subjectPoint;
+    private String name;
+    private int point;
 
-    public String getSubjectName() {
-        return subjectName;
+    public String getName() {
+        return name;
     }
 
-    public void setSubjectName(String subjectName) {
-        this.subjectName = subjectName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getSubjectPoint() {
-        return subjectPoint;
+    public int getPoint() {
+        return point;
     }
 
-    public void setSubjectPoint(int subjectPoint) {
-        this.subjectPoint = subjectPoint;
+    public void setPoint(int point) {
+        this.point = point;
     }
 }
