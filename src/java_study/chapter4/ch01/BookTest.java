@@ -1,4 +1,4 @@
-package java_study.chapter4;
+package java_study.chapter4.ch01;
 
 class Book{
 
@@ -19,7 +19,7 @@ class Book{
 public class BookTest {
     public static void main(String[] args) {
         Book book = new Book("데미안", "헤르만 헤세");
-//      toString()을 재정의 하기전에는 java_study.chapter4.Book@2d209079
+//      toString()을 재정의 하기전에는 java_study.chapter4.ch01.Book@2d209079
         System.out.println(book);
 //      어어? 얘는 왜 str을 출력하면 위에와 같이 안나와?
 //      why? String 클래스에 toString이 재정의가 돼있어서 그래 그래서 Book클래서에서도 재정의 해주면 똑같이 해줄 수 있어
