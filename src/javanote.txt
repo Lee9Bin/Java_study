@@ -188,3 +188,8 @@ final 클래스 : 상속할 수 없는 클래스
 따라서 추상클래스에서 상속을 통해 구현하는 느낌과 비슷하다고 생각이된다.
 
 인터페이스 사이에서도 상속이 가능
+
+*Object 클래스
+모든클래스의 최상위 클래스
+모든 클래스는 Object에서 상속받고, Object 클래스의 메서드 중 일부는 재정의해서 사용할 수 있음
+컴파일러가 extends Object를 추가함 ex) class Student => class Student extends Object
