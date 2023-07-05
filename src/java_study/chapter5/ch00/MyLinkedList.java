@@ -1,4 +1,4 @@
-package java_study.chapter5.ch04;
+package java_study.chapter5.ch00;
 
 public class MyLinkedList {
     MyListNode head;
