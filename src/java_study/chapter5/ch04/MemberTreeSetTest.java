@@ -1,6 +1,4 @@
-package java_study.chapter5.ch03;
-
-import java.util.TreeSet;
+package java_study.chapter5.ch05;
 
 public class MemberTreeSetTest {
 //  정렬이 가능한 set클래스

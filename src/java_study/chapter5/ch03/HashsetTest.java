@@ -1,4 +1,4 @@
-package java_study.chapter5.ch02;
+package java_study.chapter5.ch02222;
 
 import java.util.HashSet;
 

@@ -1,4 +1,4 @@
-package java_study.chapter5.ch01;
+package java_study.chapter5.ch03;
 
 import java.util.ArrayList;
 
