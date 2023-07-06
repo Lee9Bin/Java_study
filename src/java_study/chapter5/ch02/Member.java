@@ -1,4 +1,4 @@
-package java_study.chapter5.ch03;
+package java_study.chapter5.ch02;
 
 public class Member {
     private int memberId;        //회원 아이디

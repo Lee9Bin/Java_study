@@ -1,4 +1,4 @@
-package java_study.chapter5.ch03;
+package java_study.chapter5.ch02;
 
 import java.util.ArrayList;
 
@@ -19,6 +19,7 @@ public class MemberArrayList {
 
     public boolean removeMember(int memberId){
         for (int i=0; i<arrayList.size(); i ++){
+//          ArrayList는 get함수를 이용해 순회 가능
             Member member = arrayList.get(i);
 
             int tempId = member.getMemberId();

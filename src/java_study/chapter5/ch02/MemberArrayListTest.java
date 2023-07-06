@@ -1,4 +1,4 @@
-package java_study.chapter5.ch03;
+package java_study.chapter5.ch02;
 
 public class MemberArrayListTest {
     public static void main(String[] args) {
