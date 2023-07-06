@@ -1,4 +1,4 @@
-package java_study.chapter5.ch04_2;
+package java_study.chapter5.ch01_2;
 
 public class GenericPrinterTest {
     public static void main(String[] args) {

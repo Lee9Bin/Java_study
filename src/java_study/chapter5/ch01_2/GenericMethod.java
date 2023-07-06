@@ -1,4 +1,4 @@
-package java_study.chapter5.ch04_2;
+package java_study.chapter5.ch01_2;
 
 public class GenericMethod {
     public static <T,V> double makeRectangle(Point<T,V> p1, Point<T,V> p2){
