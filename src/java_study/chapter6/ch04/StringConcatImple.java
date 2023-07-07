@@ -1,8 +1,8 @@
 package java_study.chapter6.ch04;
 
-public class StringConcatImplements implements StringConcat{
+public class StringConcatImple implements StringConcat{
     @Override
-    public void String(String str1, String str2) {
+    public void makeString(String str1, String str2) {
         System.out.println(str1 +','+ str2);
     }
 }
