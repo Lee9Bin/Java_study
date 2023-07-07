@@ -1,4 +1,4 @@
-package java_study.chapter5.ch05;
+package java_study.chapter5.ch04;
 import java.util.TreeSet;
 import java.util.Iterator;
 
