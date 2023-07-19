@@ -1,5 +1,4 @@
 package java_study.chapter7.school;
-
 public class Score {
     int studentId;
     Subject subject;

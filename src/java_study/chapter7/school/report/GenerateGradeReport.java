@@ -3,6 +3,7 @@ package java_study.chapter7.school.report;
 import java_study.chapter7.grade.BasicEvaluation;
 import java_study.chapter7.grade.GradeEvaluation;
 import java_study.chapter7.grade.MajorEvaluation;
+import java_study.chapter7.grade.PassFailEvaluation;
 import java_study.chapter7.school.School;
 import java_study.chapter7.school.Score;
 import java_study.chapter7.school.Student;
@@ -52,18 +53,24 @@ public class GenerateGradeReport {
 
     public void getScoregrade(Student s, int subjectId){
         ArrayList<Score> scoreList = s.getScoreList();
-        GradeEvaluation[] gradeEvaluations = {new BasicEvaluation(), new MajorEvaluation()};
+        GradeEvaluation[] gradeEvaluations = {new BasicEvaluation(), new MajorEvaluation(),new PassFailEvaluation()};
         for (Score score : scoreList){
-                buffer.append(" | ");
-                buffer.append(score.getPoint()+":");
-                if(s.getMajorSubject().getSubjectId() == subjectId){
-                    buffer.append(gradeEvaluations[Define.SAB_TYPE].getGrade(score.getPoint()));
-                }
-                else {
-                    buffer.append(gradeEvaluations[Define.AB_TYPE].getGrade(score.getPoint()));
-                }
-                buffer.append(" | ");
+                if(score.getSubject().getSubjectId() == subjectId) {
+//                    buffer.append(" | ");
+                    buffer.append(score.getPoint() + ":");
 
+                    if(score.getSubject().getGradeType() == Define.PF_TYPE){
+                        buffer.append(gradeEvaluations[Define.PF_TYPE].getGrade(score.getPoint()));
+                    }
+                    else {
+                        if (s.getMajorSubject().getSubjectId() == subjectId) {
+                            buffer.append(gradeEvaluations[Define.SAB_TYPE].getGrade(score.getPoint()));
+                        } else {
+                            buffer.append(gradeEvaluations[Define.AB_TYPE].getGrade(score.getPoint()));
+                        }
+                    }
+                    buffer.append(" | ");
+                }
         }
     }
     public void makeFooter(){

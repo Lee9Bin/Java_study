@@ -1,6 +1,5 @@
 package java_study.chapter7.school;
 import java_study.chapter7.utils.Define;
-
 import java.util.ArrayList;
 
 public class Subject {

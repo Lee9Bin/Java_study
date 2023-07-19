@@ -14,7 +14,7 @@ public class BasicEvaluation implements GradeEvaluation{
         else if (70<=point && point<80) {
             grade = "C";
         }
-        else if (60<=point && point<70) {
+        else if (55<=point && point<70) {
             grade = "D";
         }
         else {

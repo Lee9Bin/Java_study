@@ -1,5 +1,4 @@
 package java_study.chapter7.school;
-
 import java.util.ArrayList;
 
 public class Student {
