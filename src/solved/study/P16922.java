@@ -16,10 +16,8 @@ public class P16922 {
     static int[] score = {1,5,10,50};
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(br.readLine());
         back(0, 0, 0, n);
-        StringBuilder sb = new StringBuilder();
         System.out.println(ans);
     }
 
