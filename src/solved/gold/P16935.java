@@ -71,8 +71,8 @@ public class P16935 {
 				map[i][j] = que.poll();
 			}
 		}
-		Main.n = n;
-		Main.m = m;
+		P16935.n = n;
+		P16935.m = m;
 	}
 
 	public static void operation1() {
