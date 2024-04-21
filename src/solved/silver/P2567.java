@@ -3,7 +3,6 @@ package solved.silver;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class P2567 {
@@ -30,9 +29,6 @@ public class P2567 {
             }
         }
 
-        // for (int[] ints : map) {
-        //     System.out.println(Arrays.toString(ints));
-        // }
         int total = 0;
         for (int i = 0; i < 101; i++){
             for (int j = 0; j < 101; j++){
