@@ -1,6 +1,5 @@
 package solved.class1;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class p27866 {

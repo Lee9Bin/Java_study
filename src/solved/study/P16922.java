@@ -2,7 +2,6 @@ package solved.study;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
 
 /**
  * 1.문제설명: 1 5 10 50중에 중복을 허용해 n개를 뽑아 서로 다른 합의 갯수 구하기

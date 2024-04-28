@@ -1,10 +1,6 @@
 package solved.study;
 
-import javax.xml.stream.FactoryConfigurationError;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayDeque;
 import java.util.Stack;
 
 class Node {
