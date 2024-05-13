@@ -5,6 +5,7 @@
 ### java_study 📚
 강의와 책을 통해 자바를 학습한 저장소입니다.
 - [자바의 정석](https://product.kyobobook.co.kr/detail/S000001550352)
+- [이것이 자바다](https://m.hanbit.co.kr/store/books/book_view.html?p_code=B4861113361)
 - [노션](https://9-bin.notion.site/Java-7a93a71c68814130ad80e8f0be685c73?pvs=4)
 
 ## Algorithm 
