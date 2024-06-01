@@ -1,31 +1,34 @@
 package solved.silver;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.StringTokenizer;
 
 public class P24481 {
 
-    public static void main(String[] args) throws IOException {
+    static int N, M, R;
+    static ArrayList<ArrayList<Integer>> graph;
+    static int[] visited;
+    static StringBuilder sb;
+    static int index;
+
+    public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
-        int r = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        R = Integer.parseInt(st.nextToken());
 
-        int[] visited = new int[n + 1];
-        Arrays.fill(visited, -1);
-        visited[r] = 0;
+        graph = new ArrayList<>();
 
-        List<List<Integer>> graph = new ArrayList<>();
-        for (int i = 0; i <= n; i++) {
-            graph.add(new ArrayList<>());
-        }
+        for (int i = 0; i < N+1; i++) graph.add(new ArrayList<>());
 
-        for (int i = 0; i < m; i++) {
+        for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
@@ -33,25 +36,29 @@ public class P24481 {
             graph.get(b).add(a);
         }
 
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(r);
-        int cnt = 1;
-
-        while (!queue.isEmpty()) {
-            int nowV = queue.poll();
-
-            for (int i : graph.get(nowV)) {
-                if (visited[i] == -1) {
-                    visited[i] = visited[nowV] + 1;
-                    queue.add(i);
-                }
-            }
+        for (ArrayList<Integer> arrayList : graph) {
+            Collections.sort(arrayList);
         }
 
+        visited = new int[N+1];
+        Arrays.fill(visited, -1);
+        index = 0;
+        dfs(R, 0);
+
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < N+1; i++) {
             sb.append(visited[i]).append("\n");
         }
         System.out.println(sb);
+    }
+
+    public static void dfs(int now, int cnt) {
+
+        visited[now] = cnt;
+        for (int next : graph.get(now)) {
+            if (visited[next] == -1) {
+                dfs(next, cnt + 1);
+            }
+        }
     }
 }
