@@ -27,6 +27,7 @@ public class P30088 {
         for (int i = 0; i < n; i++) {
             sum += time[i];
             result += sum;
+            
         }
         System.out.println(result);
     }
