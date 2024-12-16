@@ -15,16 +15,13 @@ public class P17254 {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
-        String[][] keyboards = new String[N + 1][1000001];
-        int[][] word = new int[M][2];
+        int[][] word = new int[M][3];
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
-            String c = st.nextToken();
-
-            word[i] = new int[]{a, b};
-            keyboards[a][b] = c;
+            char c = st.nextToken().charAt(0);
+            word[i] = new int[]{a, b, c};
         }
 
         Arrays.sort(word, (int[] o1, int[] o2) -> {
@@ -33,9 +30,8 @@ public class P17254 {
 
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < M; i++) {
-            int num = word[i][0];
-            int time = word[i][1];
-            sb.append(keyboards[num][time]);
+            int key = word[i][2];
+            sb.append(Character.toChars(key));
         }
         System.out.println(sb);
     }
