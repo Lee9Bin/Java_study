@@ -3,6 +3,7 @@ package solved.gold;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
@@ -12,7 +13,7 @@ public class P1520 {
     static int[] dy = new int[]{0, 1, 0, -1};
 
     static int M, N;
-    static int[][] map;
+    static int[][] map, dp;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -22,6 +23,11 @@ public class P1520 {
         N = Integer.parseInt(st.nextToken());
 
         map = new int[M][N];
+        dp = new int[M][N];
+        for (int[] temp : dp) {
+            Arrays.fill(temp, -1);
+        }
+
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
             for (int j = 0; j < N; j++) {
@@ -29,7 +35,30 @@ public class P1520 {
             }
         }
 
-        bfs();
+        // bfs();
+        System.out.println(dfs(0, 0));
+    }
+
+    public static int dfs(int x, int y) {
+        if (x == M - 1 && y == N - 1) {
+            return 1;
+        }
+
+        if (dp[x][y] != -1) {
+            return dp[x][y];
+        }
+
+        dp[x][y] = 0;
+
+        for (int i = 0; i < 4; i++) {
+            int nextX = x + dx[i];
+            int nextY = y + dy[i];
+            if (checkRange(nextX, nextY) && map[x][y] > map[nextX][nextY]) {
+                dp[x][y] += dfs(nextX, nextY);
+            }
+        }
+
+        return dp[x][y];
     }
 
     public static void bfs() {
