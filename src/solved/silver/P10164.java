@@ -8,30 +8,37 @@ import java.util.StringTokenizer;
 public class P10164 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int N = Integer.parseInt(st.nextToken());
 		int M = Integer.parseInt(st.nextToken());
 		int K = Integer.parseInt(st.nextToken());
-		int result = 0;
+		long result = 0;
 
 		if (K != 0) {
-			int row = K / M;
-			int col = K % M - 1;
+			int row = (K - 1) / M;
+			int col = (K - 1) % M;
 
-			int first = combi(row + col, col);
-			int second = combi(M - col - 1 + N - row - 1, N - row - 1);
+			long first = combi(row + col, col);
+			long second = combi((N - 1 - row) + (M - 1 - col), N - 1 - row);
 			result = first * second;
 		} else {
-			result = combi(N + M - 2, N - 1);
+			result = combi((N - 1) + (M - 1), N - 1);
 		}
 
 		System.out.println(result);
 	}
 
-	static int combi(int n, int r) {
-		if (n == r || r == 0)
-			return 1;
-		return combi(n - 1, r - 1) + combi(n - 1, r);
+	static long combi(int n, int r) {
+		long[][] dp = new long[n + 1][r + 1];
+		for (int i = 0; i <= n; i++) {
+			for (int j = 0; j <= Math.min(i, r); j++) {
+				if (j == 0 || i == j) {
+					dp[i][j] = 1;
+				} else {
+					dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+				}
+			}
+		}
+		return dp[n][r];
 	}
 }
